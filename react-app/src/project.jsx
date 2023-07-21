@@ -1,6 +1,6 @@
 const Project = () =>{
   return(<>
-  <h1>project</h1>
+  <h1> My Project</h1>
   </>)
 }
-export default 
+export default Project;

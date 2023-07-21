@@ -1,6 +1,6 @@
-const contact = () =>{
+const Contact = () =>{
   return(<>
-  <h1>contact me</h1>
+  <h1>Contact Me</h1>
   </>)
 }
-export default About;
+export default Contact;
