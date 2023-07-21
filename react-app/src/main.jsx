@@ -1,29 +1,43 @@
-import React from 'react'
+import React, { Children } from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter,Router,RouterProvider} from 'react-router-dom';
 import About from './aboutme';
 import Contact from './contact';
-import Project from './project';
+import Project from './projects';
+import Root from './root';
+
+
+
+
 
 const routes = createBrowserRouter([
   {
-    Path: '/',
-    element: <div> hello world</div>
+    path:'/',
+    element:<Root />,
+    children:[
+    {
+      path:'aboutme',
+      element:<About />,
+    },
+    {
+      path:'contactme',
+      element:<Contact />,
+    },
+    {
+      path:'myprojects',
+      element:<Project />,
+      Children:[
+        {
+          path:'myproject',
+          Element:<aasigment 1
+        }
+      ]
+    
+    },
+  ]
   },
-  {
-    path:'aboutme',
-    element:<About />,
-  },
-  {
-    path:'contactme',
-    element:<Contact />,
-  },
-  {
-    Path:'myproject',
-    element:<Project />
-  },
-
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
