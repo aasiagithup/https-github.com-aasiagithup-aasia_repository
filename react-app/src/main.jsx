@@ -6,6 +6,8 @@ import About from './aboutme';
 import Contact from './contact';
 import Project from './projects';
 import Root from './root';
+import Assignment from './assignment';
+
 
 
 
@@ -29,9 +31,9 @@ const routes = createBrowserRouter([
       element:<Project />,
       Children:[
         {
-          path:'myproject',
-          Element:<aasigment 1
-        }
+          path:'project1',
+          Element:<Assignment />,
+        },
       ]
     
     },
