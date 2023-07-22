@@ -31,7 +31,7 @@ const routes = createBrowserRouter([
       element:<Project />,
       Children:[
         {
-          path:'project1',
+          path:'Assignment',
           Element:<Assignment />,
         },
       ]
