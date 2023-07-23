@@ -7,6 +7,7 @@ import Contact from './contact';
 import Project from './projects';
 import Root from './root';
 import Assignment from './assignment';
+import navbar from './components/navbar';
 
 
 
@@ -14,6 +15,7 @@ import Assignment from './assignment';
 
 
 const routes = createBrowserRouter([
+  <navbar/>,
   {
     path:'/',
     element:<Root />,
